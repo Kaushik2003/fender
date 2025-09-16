@@ -4,11 +4,11 @@ import { Home, Building2, Coins, PieChart, Activity, HelpCircle, ChevronDown, Pl
 import { Button } from "@/components/ui/button"
 
 const navigationItems = [
-  { name: "Dashboard", icon: Home, active: true },
-  { name: "My Companies", icon: Building2, active: false },
-  { name: "My Tokens", icon: Coins, active: false },
-  { name: "Allocations", icon: PieChart, active: false },
-  { name: "Recent Activity", icon: Activity, active: false },
+  { name: "Dashboard", icon: Home, href: "/dashboard", active: false },
+  { name: "My Companies", icon: Building2, href: "/my-companies", active: false },
+  { name: "My Tokens", icon: Coins, href: "/my-tokens", active: false },
+  { name: "Allocations", icon: PieChart, href: "/allocations", active: false },
+  { name: "Recent Activity", icon: Activity, href: "/recent-activity", active: false },
 ]
 
 export function Sidebar() {
@@ -45,7 +45,7 @@ export function Sidebar() {
           {navigationItems.map((item) => (
             <li key={item.name}>
               <a
-                href="#"
+                href={item.href}
                 className={`flex items-center gap-3 px-3 py-2 rounded-xl transition-all duration-200 relative group ${
                   item.active
                     ? "text-white bg-[color:var(--secondary)] shadow-lg border border-[color:var(--sidebar-border)]"
