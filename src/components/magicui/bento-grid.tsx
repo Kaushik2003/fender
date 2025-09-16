@@ -178,8 +178,8 @@ export default function BentoGrid() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#800080]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
               <div className="relative z-10 h-full flex flex-col">
                 <div className="mb-6">
-                  <h3 className="text-xl font-thin mb-2 text-white">Eco-Friendly Legacy</h3>
-                  <p className="text-white/90 text-sm font-light">Leave a mark, not a footprint</p>
+                  <h3 className="text-xl font-thin mb-2 text-white">Vesting, Verified by the People</h3>
+                  <p className="text-white/90 text-sm font-light">A new standard for accountability in token distribution.</p>
                 </div>
                 
                 

@@ -116,7 +116,7 @@ export default function HeroSection() {
       </motion.p>
       
       {/* Email Signup Form */}
-      {/* <motion.div
+      <motion.div
         className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12 w-full max-w-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -142,109 +142,14 @@ export default function HeroSection() {
             <span className="relative z-10">Join The Waitlist</span>
           </Button>
         </motion.div>
-      </motion.div> */}
-
-
+      </motion.div>
       <div className="mt-2 ">
-      {/* <Safari
+      <Safari
         url="magicui.design"
         className="size-half bg-black"
         imageSrc="/images/dashboard.png"
-      /> */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-20">
-          {/* Left Card - The Decal Felix */}
-          <Card className="bg-card border-border p-6 rounded-2xl w-full max-w-sm card-glow">
-            <div className="relative mb-4">
-              <img
-                src="/futuristic-blue-bunny-creature-with-cyberpunk-elem.jpg"
-                alt="The Decal Felix"
-                className="w-full h-64 object-cover rounded-xl"
-              />
-              <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2">
-                <Heart className="w-4 h-4 text-muted-foreground" />
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2">The Decal Felix</h3>
-            <p className="text-muted-foreground text-sm mb-4">Ian Fang</p>
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="text-xs text-muted-foreground">Current Bid</p>
-                <p className="text-lg font-bold text-card-foreground">5.00 ETH</p>
-              </div>
-              <div className="text-right">
-                <p className="text-xs text-muted-foreground">Ends in</p>
-                <div className="flex items-center space-x-1 text-sm">
-                  <Clock className="w-3 h-3" />
-                  <span>12h 43m 42s</span>
-                </div>
-              </div>
-            </div>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
-              Place Bid
-            </Button>
-          </Card>
-
-          {/* Center Card - Emperor's Guard */}
-          <Card className="bg-card border-border p-6 rounded-2xl w-full max-w-sm card-glow transform lg:scale-110 z-10">
-            <div className="relative mb-4">
-              <img
-                src="/purple-cosmic-bunny-creature-with-mystical-element.jpg"
-                alt="Emperor's Guard"
-                className="w-full h-64 object-cover rounded-xl"
-              />
-              <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2">
-                <Heart className="w-4 h-4 text-muted-foreground" />
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2">Emperor's Guard</h3>
-            <p className="text-muted-foreground text-sm mb-4">@nebula_art</p>
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="text-xs text-muted-foreground">Current Bid</p>
-                <p className="text-lg font-bold text-card-foreground">8.50 ETH</p>
-              </div>
-              <div className="text-right">
-                <p className="text-xs text-muted-foreground">Ends in</p>
-                <div className="flex items-center space-x-1 text-sm">
-                  <Clock className="w-3 h-3" />
-                  <span>8h 12m 18s</span>
-                </div>
-              </div>
-            </div>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
-              Place Bid
-            </Button>
-          </Card>
-
-          {/* Right Card - Snow Bunny */}
-          <Card className="bg-card border-border p-6 rounded-2xl w-full max-w-sm card-glow">
-            <div className="relative mb-4">
-              <img src="/orange-warm-toned-bunny-creature-with-fire-element.jpg" alt="Snow Bunny" className="w-full h-64 object-cover rounded-xl" />
-              <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2">
-                <Heart className="w-4 h-4 text-muted-foreground" />
-              </div>
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2">Snow Bunny</h3>
-            <p className="text-muted-foreground text-sm mb-4">@winter_dreams</p>
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="text-xs text-muted-foreground">Current Bid</p>
-                <p className="text-lg font-bold text-card-foreground">3.25 ETH</p>
-              </div>
-              <div className="text-right">
-                <p className="text-xs text-muted-foreground">Ends in</p>
-                <div className="flex items-center space-x-1 text-sm">
-                  <Clock className="w-3 h-3" />
-                  <span>15h 28m 55s</span>
-                </div>
-              </div>
-            </div>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
-              Place Bid
-            </Button>
-          </Card>
-        </div>
-
+      />
+      
       
       </div>
 
@@ -261,3 +166,98 @@ export default function HeroSection() {
     </motion.div>
   )
 }
+
+
+// <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-20">
+//           {/* Left Card - The Decal Felix */}
+//           <Card className="bg-card border-border p-6 rounded-2xl w-full max-w-sm card-glow">
+//             <div className="relative mb-4">
+//               <img
+//                 src="/futuristic-blue-bunny-creature-with-cyberpunk-elem.jpg"
+//                 alt="The Decal Felix"
+//                 className="w-full h-64 object-cover rounded-xl"
+//               />
+//               <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2">
+//                 <Heart className="w-4 h-4 text-muted-foreground" />
+//               </div>
+//             </div>
+//             <h3 className="text-lg font-semibold text-card-foreground mb-2">The Decal Felix</h3>
+//             <p className="text-muted-foreground text-sm mb-4">Ian Fang</p>
+//             <div className="flex items-center justify-between mb-4">
+//               <div>
+//                 <p className="text-xs text-muted-foreground">Current Bid</p>
+//                 <p className="text-lg font-bold text-card-foreground">5.00 ETH</p>
+//               </div>
+//               <div className="text-right">
+//                 <p className="text-xs text-muted-foreground">Ends in</p>
+//                 <div className="flex items-center space-x-1 text-sm">
+//                   <Clock className="w-3 h-3" />
+//                   <span>12h 43m 42s</span>
+//                 </div>
+//               </div>
+//             </div>
+//             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
+//               Place Bid
+//             </Button>
+//           </Card>
+
+//           {/* Center Card - Emperor's Guard */}
+//           <Card className="bg-card border-border p-6 rounded-2xl w-full max-w-sm card-glow transform lg:scale-110 z-10">
+//             <div className="relative mb-4">
+//               <img
+//                 src="/purple-cosmic-bunny-creature-with-mystical-element.jpg"
+//                 alt="Emperor's Guard"
+//                 className="w-full h-64 object-cover rounded-xl"
+//               />
+//               <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2">
+//                 <Heart className="w-4 h-4 text-muted-foreground" />
+//               </div>
+//             </div>
+//             <h3 className="text-lg font-semibold text-card-foreground mb-2">Emperor's Guard</h3>
+//             <p className="text-muted-foreground text-sm mb-4">@nebula_art</p>
+//             <div className="flex items-center justify-between mb-4">
+//               <div>
+//                 <p className="text-xs text-muted-foreground">Current Bid</p>
+//                 <p className="text-lg font-bold text-card-foreground">8.50 ETH</p>
+//               </div>
+//               <div className="text-right">
+//                 <p className="text-xs text-muted-foreground">Ends in</p>
+//                 <div className="flex items-center space-x-1 text-sm">
+//                   <Clock className="w-3 h-3" />
+//                   <span>8h 12m 18s</span>
+//                 </div>
+//               </div>
+//             </div>
+//             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
+//               Place Bid
+//             </Button>
+//           </Card>
+
+//           {/* Right Card - Snow Bunny */}
+//           <Card className="bg-card border-border p-6 rounded-2xl w-full max-w-sm card-glow">
+//             <div className="relative mb-4">
+//               <img src="/orange-warm-toned-bunny-creature-with-fire-element.jpg" alt="Snow Bunny" className="w-full h-64 object-cover rounded-xl" />
+//               <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2">
+//                 <Heart className="w-4 h-4 text-muted-foreground" />
+//               </div>
+//             </div>
+//             <h3 className="text-lg font-semibold text-card-foreground mb-2">Snow Bunny</h3>
+//             <p className="text-muted-foreground text-sm mb-4">@winter_dreams</p>
+//             <div className="flex items-center justify-between mb-4">
+//               <div>
+//                 <p className="text-xs text-muted-foreground">Current Bid</p>
+//                 <p className="text-lg font-bold text-card-foreground">3.25 ETH</p>
+//               </div>
+//               <div className="text-right">
+//                 <p className="text-xs text-muted-foreground">Ends in</p>
+//                 <div className="flex items-center space-x-1 text-sm">
+//                   <Clock className="w-3 h-3" />
+//                   <span>15h 28m 55s</span>
+//                 </div>
+//               </div>
+//             </div>
+//             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
+//               Place Bid
+//             </Button>
+//           </Card>
+//         </div>
