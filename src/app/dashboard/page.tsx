@@ -11,7 +11,17 @@ import { RecentActivity } from "@/components/recent-activity"
 
 export default function Page() {
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
+    <div
+      className="flex min-h-screen w-full bg-[#000000]"
+      style={{
+        background:
+          "linear-gradient(to bottom, #000000 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 20%, #000000 100%), url('/images/background1.jpg')",
+        backgroundPosition: "top center, top center",
+        backgroundRepeat: "no-repeat, no-repeat",
+        backgroundSize: "100% auto, 100% auto",
+        backgroundBlendMode: "normal, normal",
+      }}
+    >
       <Sidebar />
       <main className="flex-1 p-6 overflow-y-auto">
         <div className="space-y-6">

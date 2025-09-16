@@ -13,16 +13,16 @@ const navigationItems = [
 
 export function Sidebar() {
   return (
-    <div className="w-80 bg-black/20 backdrop-blur-xl border-r border-white/10 flex flex-col">
+    <div className="w-80 bg-[color:var(--sidebar)]/60 border-r border-[color:var(--sidebar-border)] flex flex-col backdrop-blur-xl">
       {/* User Profile Section */}
-      <div className="p-6 border-b border-white/10">
+      <div className="p-6 border-b border-[color:var(--sidebar-border)]">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
+          <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold bg-[color:var(--sidebar-primary)]">
             B
           </div>
           <div className="flex-1">
             <div className="flex items-center gap-2">
-              <span className="text-white font-medium">Bruno</span>
+              <span className="text-[color:var(--sidebar-foreground)] font-medium">Bruno</span>
               <ChevronDown className="w-4 h-4 text-white/60" />
             </div>
             <p className="text-white/60 text-sm">bruno@magna.so</p>
@@ -31,10 +31,10 @@ export function Sidebar() {
       </div>
 
       {/* Project Selector */}
-      <div className="p-6 border-b border-white/10">
+      <div className="p-6 border-b border-[color:var(--sidebar-border)]">
         <div className="flex items-center gap-2">
           <Lock className="w-4 h-4 text-white/60" />
-          <span className="text-white font-semibold">Magna</span>
+          <span className="text-[color:var(--sidebar-foreground)] font-semibold">Magna</span>
           <ChevronDown className="w-4 h-4 text-white/60" />
         </div>
       </div>
@@ -48,12 +48,12 @@ export function Sidebar() {
                 href="#"
                 className={`flex items-center gap-3 px-3 py-2 rounded-xl transition-all duration-200 relative group ${
                   item.active
-                    ? "text-white bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/50"
-                    : "text-slate-300 hover:bg-slate-800/50 hover:text-white hover:border hover:border-slate-700/30"
+                    ? "text-white bg-[color:var(--secondary)] shadow-lg border border-[color:var(--sidebar-border)]"
+                    : "text-slate-300 hover:bg-[color:var(--secondary)]/60 hover:text-white hover:border hover:border-[color:var(--sidebar-border)]"
                 }`}
               >
                 {item.active && (
-                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-400 to-blue-400 rounded-r" />
+                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-[color:var(--sidebar-primary)] rounded-r" />
                 )}
                 <item.icon className="w-5 h-5" />
                 <span className="font-medium">{item.name}</span>

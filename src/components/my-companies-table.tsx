@@ -39,7 +39,7 @@ const companies = [
 
 export function MyCompaniesTable() {
   return (
-    <Card className="bg-black/20 backdrop-blur-xl border-white/10 rounded-xl">
+    <Card className="bg-[color:var(--card)] border-[color:var(--border)] rounded-xl">
       <CardHeader>
         <CardTitle className="text-white">My Companies</CardTitle>
         <p className="text-white/60 text-sm">Companies you have token allocations with</p>

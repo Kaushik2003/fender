@@ -40,7 +40,7 @@ export function StatsCards() {
       {stats.map((stat) => (
         <Card
           key={stat.title}
-          className="bg-black/20 backdrop-blur-xl border-white/10 rounded-xl hover:bg-black/30 transition-all duration-200"
+          className="bg-[color:var(--card)] border-[color:var(--border)] rounded-xl hover:bg-[#141820] transition-all duration-200"
         >
           <CardContent className="p-6">
             <div className="flex items-center justify-between">

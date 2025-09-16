@@ -12,7 +12,7 @@ const data = [
 
 export function FundsDistributionChart() {
   return (
-    <Card className="bg-black/20 backdrop-blur-xl border-white/10 rounded-xl">
+    <Card className="bg-[color:var(--card)] border-[color:var(--border)] rounded-xl">
       <CardHeader>
         <CardTitle className="text-white">Funds Distribution</CardTitle>
         <p className="text-white/60 text-sm">Token allocation across different groups</p>
@@ -34,7 +34,7 @@ export function FundsDistributionChart() {
                   color: "white",
                 }}
               />
-              <Legend wrapperStyle={{ color: "white" }} />
+              <Legend wrapperStyle={{ color: "#e6e6e6" }} />
             </PieChart>
           </ResponsiveContainer>
         </div>

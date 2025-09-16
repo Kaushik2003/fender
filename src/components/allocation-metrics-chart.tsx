@@ -28,7 +28,7 @@ const data = [
 
 export function AllocationMetricsChart() {
   return (
-    <Card className="bg-black/20 backdrop-blur-xl border-white/10 rounded-xl">
+    <Card className="bg-[color:var(--card)] border-[color:var(--border)] rounded-xl">
       <CardHeader>
         <CardTitle className="text-white">Allocation Metrics</CardTitle>
         <p className="text-white/60 text-sm">Vested vs remaining tokens by group</p>
@@ -37,7 +37,7 @@ export function AllocationMetricsChart() {
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.1)" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.15)" />
               <XAxis
                 dataKey="group"
                 tick={{ fill: "white", fontSize: 12 }}
@@ -52,7 +52,7 @@ export function AllocationMetricsChart() {
                   color: "white",
                 }}
               />
-              <Legend wrapperStyle={{ color: "white" }} />
+              <Legend wrapperStyle={{ color: "#e6e6e6" }} />
               <Bar dataKey="vested" fill="#10B981" name="Vested" radius={[4, 4, 0, 0]} />
               <Bar dataKey="remaining" fill="#8B5CF6" name="Remaining" radius={[4, 4, 0, 0]} />
             </BarChart>
