@@ -6,23 +6,33 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 const data = [
   {
     group: "Investors",
-    vested: 1200000,
-    remaining: 800000,
+    allocated: 28404580,
+    remaining: 71595420,
   },
   {
-    group: "Core Team",
-    vested: 600000,
-    remaining: 900000,
+    group: "Core Team Member",
+    allocated: 20000000,
+    remaining: 80000000,
+  },
+  {
+    group: "Community Rewards",
+    allocated: 15000000,
+    remaining: 85000000,
+  },
+  {
+    group: "MXM Launchpad",
+    allocated: 5000000,
+    remaining: 95000000,
   },
   {
     group: "Community",
-    vested: 400000,
-    remaining: 600000,
+    allocated: 4440110,
+    remaining: 95559890,
   },
   {
     group: "Liquidity",
-    vested: 300000,
-    remaining: 200000,
+    allocated: 4000000,
+    remaining: 96000000,
   },
 ]
 
@@ -31,7 +41,7 @@ export function AllocationMetricsChart() {
     <Card className="bg-[color:var(--card)] border-[color:var(--border)] rounded-xl">
       <CardHeader>
         <CardTitle className="text-white">Allocation Metrics</CardTitle>
-        <p className="text-white/60 text-sm">Vested vs remaining tokens by group</p>
+        <p className="text-white/60 text-sm">Allocated vs remaining tokens by group</p>
       </CardHeader>
       <CardContent>
         <div className="h-80">
@@ -53,8 +63,8 @@ export function AllocationMetricsChart() {
                 }}
               />
               <Legend wrapperStyle={{ color: "#e6e6e6" }} />
-              <Bar dataKey="vested" fill="#10B981" name="Vested" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="remaining" fill="#8B5CF6" name="Remaining" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="allocated" fill="#A553FF" name="Allocated" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="remaining" fill="#9CA3AF" name="Remaining" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

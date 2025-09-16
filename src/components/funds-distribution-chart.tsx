@@ -4,17 +4,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts"
 
 const data = [
-  { name: "Investors", value: 45, color: "#8B5CF6" },
-  { name: "Core Team", value: 25, color: "#06B6D4" },
-  { name: "Community", value: 20, color: "#10B981" },
-  { name: "Liquidity", value: 10, color: "#F59E0B" },
+  { name: "Investors", value: 28.40458, color: "#A553FF" },
+  { name: "Core Team Member", value: 20, color: "#525252" },
+  { name: "Community Rewards", value: 15, color: "#10B981" },
+  { name: "MXM Launchpad", value: 5, color: "#06B6D4" },
+  { name: "Community", value: 4.44011, color: "#F59E0B" },
+  { name: "Liquidity", value: 4, color: "#EAB308" },
+  { name: "Unallocated", value: 20.5153, color: "#9CA3AF" },
 ]
 
 export function FundsDistributionChart() {
   return (
     <Card className="bg-[color:var(--card)] border-[color:var(--border)] rounded-xl">
       <CardHeader>
-        <CardTitle className="text-white">Funds Distribution</CardTitle>
+        <CardTitle className="text-white">Ownership</CardTitle>
         <p className="text-white/60 text-sm">Token allocation across different groups</p>
       </CardHeader>
       <CardContent>
