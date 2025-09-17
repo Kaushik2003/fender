@@ -13,7 +13,7 @@ const navigationItems = [
 
 export function Sidebar() {
   return (
-    <div className="w-80 bg-[color:var(--sidebar)]/60 border-r border-[color:var(--sidebar-border)] flex flex-col backdrop-blur-xl">
+    <div className="w-80 h-screen bg-[#000000] border-r border-[color:var(--sidebar-border)] flex flex-col backdrop-blur-xl">
       {/* User Profile Section */}
       <div className="p-6 border-b border-[color:var(--sidebar-border)]">
         <div className="flex items-center gap-3">
@@ -64,7 +64,7 @@ export function Sidebar() {
       </nav>
 
       {/* Bottom Section */}
-      <div className="p-6 border-t border-white/10 space-y-4">
+      <div className="p-6 border-t border-white/10 space-y-4 mt-auto">
         <Button className="w-full bg-slate-800/60 hover:bg-slate-700/70 text-white border border-slate-700/50 backdrop-blur-sm rounded-xl transition-all duration-200 font-medium">
           <Plus className="w-4 h-4 mr-2" />
           Create Project

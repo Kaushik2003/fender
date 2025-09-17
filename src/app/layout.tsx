@@ -21,8 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div id="root">{children}</div>
+      <body className="bg-[#000000]">
+        <div id="root" className="bg-[#000000] min-h-screen">{children}</div>
         <Toaster />
       </body>
     </html>

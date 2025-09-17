@@ -49,20 +49,8 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="relative bg-[#000000] min-h-screen w-full overflow-hidden ">
-      <div
-      className="relative bg-[#000000] min-h-screen w-full overflow-hidden "
-      style={{
-        background: `
-      linear-gradient(to bottom, #000000 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 20%, #000000 100%),
-      url('/images/background1.jpg')
-    `,
-        backgroundPosition: "top center, top center",
-        backgroundRepeat: "no-repeat, no-repeat",
-        backgroundSize: "100% auto, 100% auto",
-        backgroundBlendMode: "normal, normal",
-      }}
-    >
+    <div className="relative bg-[#000000] min-h-screen w-full overflow-hidden">
+      <div className="relative bg-[#000000] min-h-screen w-full overflow-hidden">
      
     
  
@@ -77,13 +65,47 @@ export default function Home() {
         
         <HeroSection />
       </div>
+      {/* Main particle layer */}
+      <Particles
+        className="absolute inset-0 z-0"
+        quantity={200}
+        ease={60}
+        color={"#FFFFFF"}
+        size={0.8}
+        staticity={30}
+        vx={0.2}
+        vy={0.1}
+        refresh
+      />
+      
+      {/* Secondary particle layer for depth */}
+      <Particles
+        className="absolute inset-0 z-0"
+        quantity={150}
+        ease={40}
+        color={"#A553FF"}
+        size={0.4}
+        staticity={50}
+        vx={-0.1}
+        vy={0.05}
+        refresh
+      />
+      
+      {/* Tertiary particle layer for subtle movement */}
       <Particles
         className="absolute inset-0 z-0"
         quantity={100}
         ease={80}
-        color={"#FFFFFF"}
+        color={"#06B6D4"}
+        size={0.3}
+        staticity={70}
+        vx={0.05}
+        vy={-0.15}
         refresh
       />
+      
+      {/* Subtle gradient overlay for better particle visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 pointer-events-none z-10"></div>
       <Features />
       <HowItWorks/>
       <FAQSection />
